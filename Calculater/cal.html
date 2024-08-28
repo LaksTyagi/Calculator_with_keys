@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="result" readonly></td>
+            </tr>
+            <tr>
+                <td><button onclick="clearDisplay()">AC</button></td>
+                <td><button onclick="deleteLast()">DEL</button></td>
+                <td><button onclick="appendOperator('%')">%</button></td>
+                <td><button onclick="appendOperator('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('7')">7</button></td>
+                <td><button onclick="appendNumber('8')">8</button></td>
+                <td><button onclick="appendNumber('9')">9</button></td>
+                <td><button onclick="appendOperator('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('4')">4</button></td>
+                <td><button onclick="appendNumber('5')">5</button></td>
+                <td><button onclick="appendNumber('6')">6</button></td>
+                <td><button onclick="appendOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('1')">1</button></td>
+                <td><button onclick="appendNumber('2')">2</button></td>
+                <td><button onclick="appendNumber('3')">3</button></td>
+                <td><button onclick="appendOperator('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber('0')">0</button></td>
+                <td><button onclick="appendNumber('.')">.</button></td>
+                <td colspan="2"><button onclick="calculateResult()" class="equal">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
